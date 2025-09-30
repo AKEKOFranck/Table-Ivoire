@@ -155,7 +155,7 @@
         top: 10px;
     }
     .home_title{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .home_cont_first{
@@ -176,8 +176,17 @@
         justify-content: center;
     }
 
-    .home_cont, .home_box{
+    .home_cont{
         width: 100%;
+    }
+
+    .home_box{
+        width: 50%;
+    }
+
+    .home_box:hover{
+        transform: translateY(0px);
+        background-color: burlywood;
     }
 }
 
@@ -213,9 +222,21 @@
         justify-content: center;
     }
 
-    .home_cont, .home_box{
+    .home_cont{
         width: 100%;
     }
+
+     .home_box{
+        width: 45%;
+    }
+
+    .home_box:hover{
+        transform: translateY(-5px);
+        background-color: burlywood;
+    }
+
+    
+
 }
 
 
@@ -249,8 +270,17 @@
         justify-content: center;
     }
 
-    .home_cont, .home_box{
+    .home_cont{
         width: 100%;
+    }
+
+     .home_box{
+        width: 45%;
+    }
+
+    .home_box:hover{
+        transform: translateY(-5px);
+        background-color: burlywood;
     }
 
 }

@@ -15,17 +15,23 @@ export default function Footer() {
             icons: <Link to= "">  <IoMdHome className='foot_ico' /> </Link>,
             text: "Accueil"
         },
-       
+
+        {
+            id: 2,
+            icons: <Link to= ""> <MdOutlineFoodBank className='foot_ico' /> </Link>,
+            text:  (
+            <>
+                Espace
+                <p>restaurant</p>
+            </>
+            ), 
+        },
+
         {
             id: 3,
             icons: <Link to= ""> <RiCustomerService2Line className='foot_ico' /> </Link>,
             text: "Service client"
         },
-        {
-            id: 4,
-            icons: <Link to= ""> <MdOutlineFoodBank className='foot_ico' /> </Link>,
-            text: "Espace restaurant"
-        }
     ];
    
     return(
