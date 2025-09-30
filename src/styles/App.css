@@ -1,0 +1,24 @@
+/* Styles spécifiques à votre layout et composants App */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Vos styles spécifiques ici */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+.footer {
+  background: #f8f9fa;
+  padding: 2rem 0;
+  text-align: center;
+}
