@@ -20,10 +20,11 @@ body {
 
 }
 
-link{
-  border: 1px solid whitesmoke;
-}
 
+Link{
+  border: 1px solid whitesmoke;
+  text-decoration: none;
+}
 
 
 /* Styles de base pour les éléments HTML */
