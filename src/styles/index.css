@@ -20,6 +20,12 @@ body {
 
 }
 
+link{
+  border: 1px solid whitesmoke;
+}
+
+
+
 /* Styles de base pour les éléments HTML */
 a {
   text-decoration: none;
