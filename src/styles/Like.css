@@ -1,0 +1,172 @@
+.main{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+    padding: 1rem;
+}
+
+
+
+.reaction-buttons {
+  display: flex;
+  gap: 2rem;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reaction-buttons button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.like-btn {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.like-btn:hover:not(.active) {
+  background: linear-gradient(135deg, #20c997, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.like-btn.active {
+  background: #198754;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dislike-btn {
+  background: linear-gradient(135deg, #dc3545, #e83e8c);
+  color: white;
+}
+
+.dislike-btn:hover:not(.active) {
+  background: linear-gradient(135deg, #e83e8c, #dc3545);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.dislike-btn.active {
+  background: #dc3545;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.reaction-buttons button:active:not(.active) {
+  transform: translateY(0);
+}
+
+.count {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #495057;
+  background: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  border: 1px solid #dee2e6;
+  min-width: 40px;
+  text-align: center;
+}
+
+.like-btn.active + .count {
+  color: #198754;
+  background: #d1f2eb;
+  border-color: #198754;
+}
+
+.dislike-btn.active + .count {
+  color: #dc3545;
+  background: #f8d7da;
+  border-color: #dc3545;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.reaction-buttons button:not(.active):hover {
+  animation: pulse 0.3s ease;
+}
+
+/* Version responsive */
+@media (max-width: 768px) {
+  .main {
+    padding: 0.5rem;
+  }
+  
+  .reaction-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .reaction-buttons button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    min-width: 120px;
+  }
+  
+  .count {
+    font-size: 1rem;
+  }
+}
+
+/* Thème sombre */
+@media (prefers-color-scheme: dark) {
+  .reaction-buttons {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .count {
+    background: #4a5568;
+    color: #e2e8f0;
+    border-color: #718096;
+  }
+  
+  .like-btn.active + .count {
+    color: #48bb78;
+    background: #22543d;
+    border-color: #48bb78;
+  }
+  
+  .dislike-btn.active + .count {
+    color: #fc8181;
+    background: #742a2a;
+    border-color: #fc8181;
+  }
+}

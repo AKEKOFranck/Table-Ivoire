@@ -12,13 +12,13 @@ export default function First() {
     const foodData1 = [
         {
             id: 1 ,
-            title : "Resto Name" ,
+            title : "La Pirogue" ,
             items:[
-                "price range",
-                <Link to=''>  <FaMapLocationDot className='first_icons' /> Map </Link>,
-                <Link to=''> <MdOutlineFoodBank className='first_icons' /> Specialties </Link>,
-                <Link to=''> <FaPhoneVolume className='first_icons' /> Number </Link>,
-                "Zone"
+                "10 000 - 40 000 XOF",
+                <Link to='https://maps.app.goo.gl/NeUdsGgGLp1MyN7Q7'>  <FaMapLocationDot className='first_icons' /> Localisation </Link>,
+                "fruits de mer,grillades,  spécialités ivoiriennes, européennes",
+                <Link to="tel:+2252720224046 "> <FaPhoneVolume className='first_icons' /> numéro </Link>,
+                "Cocody St Jean"
             ],
         },
 
